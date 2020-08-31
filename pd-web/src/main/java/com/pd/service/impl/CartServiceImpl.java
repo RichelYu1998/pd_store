@@ -3,7 +3,6 @@ package com.pd.service.impl;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.pd.mapper.PdCartItemMapper;
@@ -20,16 +19,18 @@ import com.pd.pojo.paramData.PdItemParamData;
 import com.pd.common.utils.JsonUtils;
 import com.pd.service.CartService;
 
+import javax.annotation.Resource;
+
 @Service
 public class CartServiceImpl implements CartService {
 
-	@Autowired
+	@Resource
 	PdCartItemMapper pdCartItemMapper;
 
-	@Autowired
+	@Resource
 	PdItemMapper pdItemMapper;
 
-	@Autowired
+	@Resource
 	PdItemParamItemMapper pdItemParamItemMapper;
 
 	@Override

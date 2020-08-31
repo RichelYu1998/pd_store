@@ -2,12 +2,12 @@ package com.pd.controller;
 
 import java.util.List;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -22,7 +22,7 @@ import com.pd.service.AddressService;
 @Controller
 public class AddressController {
 
-	@Autowired
+	@Resource
 	AddressService addressService;
 
 	@RequestMapping("/address/getDefault.html")

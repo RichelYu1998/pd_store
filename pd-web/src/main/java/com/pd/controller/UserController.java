@@ -3,11 +3,11 @@ package com.pd.controller;
 
 import java.util.UUID;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,7 +25,7 @@ import com.pd.service.UserService;
 @Controller
 public class UserController {
 	
-	@Autowired
+	@Resource
 	UserService userService;
 	
 	//http://localhost:8090/user/login.html?username=b&password=123457

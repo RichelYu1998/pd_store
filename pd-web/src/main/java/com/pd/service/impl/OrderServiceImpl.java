@@ -5,7 +5,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.pd.mapper.PdCartItemMapper;
@@ -33,24 +32,26 @@ import com.github.pagehelper.PageInfo;
 import com.pd.common.utils.JsonUtils;
 import com.pd.service.OrderService;
 
+import javax.annotation.Resource;
+
 @Service
 public class OrderServiceImpl implements OrderService {
-	@Autowired
+	@Resource
 	PdOrderMapper pdOrderMapper;
 
-	@Autowired
+	@Resource
 	PdCartItemMapper pdCartItemMapper;
 
-	@Autowired
+	@Resource
 	PdItemMapper pdItemMapper;
 
-	@Autowired
+	@Resource
 	PdItemParamItemMapper pdItemParamItemMapper;
 
-	@Autowired
+	@Resource
 	PdShippingMapper pdShippingMapper;
 
-	@Autowired
+	@Resource
 	PdOrderItemMapper pdOrderItemMapper;
 
 

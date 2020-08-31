@@ -3,7 +3,6 @@ package com.pd.service.impl;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.pd.mapper.PdItemDescMapper;
@@ -14,13 +13,15 @@ import com.pd.pojo.PdItemExample;
 import com.pd.pojo.DetailVO;
 import com.pd.service.ApiService;
 
+import javax.annotation.Resource;
+
 @Service
 public class ApiServiceImpl implements ApiService {
 
-	@Autowired
+	@Resource
 	PdItemMapper pdItemMapper;
 
-	@Autowired
+	@Resource
 	PdItemDescMapper pdItemDescMapper;
 
 	@Override

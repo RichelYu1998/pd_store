@@ -1,6 +1,5 @@
 package com.pd.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,10 +10,12 @@ import com.pd.pojo.PdOrder;
 import com.pd.payment.utils.PaymentUtil;
 import com.pd.service.OrderService;
 
+import javax.annotation.Resource;
+
 @Controller
 @RequestMapping("/yibao")
 public class PaymentController {
-	@Autowired
+	@Resource
 	private OrderService orderService;
 	//商户编号，易宝提供的
 	private String accountID="10001126856";

@@ -2,7 +2,6 @@ package com.pd.service.impl;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.pd.mapper.PdShippingMapper;
@@ -10,12 +9,14 @@ import com.pd.pojo.PdShipping;
 import com.pd.pojo.PdShippingExample;
 import com.pd.service.AddressService;
 
+import javax.annotation.Resource;
+
 //
 @Service
 public class AddressServiceImpl implements AddressService{
 
 	//
-	@Autowired
+	@Resource
 	PdShippingMapper pdShippingMapper;
 	@Override
 	public int insert(PdShipping pdShipping) throws Exception {

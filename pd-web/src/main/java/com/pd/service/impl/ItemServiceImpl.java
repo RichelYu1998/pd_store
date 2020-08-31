@@ -2,7 +2,6 @@ package com.pd.service.impl;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.pd.mapper.PdItemDescMapper;
@@ -19,18 +18,20 @@ import com.pd.pojo.paramData.Params;
 import com.pd.common.utils.JsonUtils;
 import com.pd.service.ItemService;
 
+import javax.annotation.Resource;
+
 @Service
 public class ItemServiceImpl implements ItemService {
-	@Autowired
+	@Resource
 	PdItemMapper pdItemMapper;
 
-	@Autowired
+	@Resource
 	PdItemParamItemMapper pdItemParamItemMapper;
 
-	@Autowired
+	@Resource
 	PdItemDescMapper pdItemDescMapper;
 
-	@Autowired
+	@Resource
 	PdItemParamMapper pdItemParamMapper;
 
 	@Override
