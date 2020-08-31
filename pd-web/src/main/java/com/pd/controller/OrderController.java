@@ -94,10 +94,12 @@ public class OrderController {
 	@ResponseBody
 	public PdResult submitOrder(HttpSession session,Long addId, Long[] itemId) throws Exception {
 		List<Long> itemIdList = Arrays.asList(itemId);
-		PdOrder pdOrder = new PdOrder();
-		pdOrder.setAddId(addId);
-		pdOrder.setUserId(Tools.getUserId(session));
-		pdOrder.setItemIdList(itemIdList);
+
+
+		PdOrder pdOrder = new PdOrder();//新建订单实例
+		pdOrder.setAddId(addId); //设置地址id
+		pdOrder.setUserId(Tools.getUserId(session)); //用户id
+		pdOrder.setItemIdList(itemIdList); //购买的商品id列表
 		String orderId=orderService.saveOrder(pdOrder);
 
 		PdResult pdResult=new PdResult();
