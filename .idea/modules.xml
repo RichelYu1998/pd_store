@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/pd-order-consumer/pd-order-consumer.iml" filepath="$PROJECT_DIR$/pd-order-consumer/pd-order-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/pd-web/pd-web.iml" filepath="$PROJECT_DIR$/pd-web/pd-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/pd_store.iml" filepath="$PROJECT_DIR$/.idea/pd_store.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitmq-springboot/rabbitmq-springboot.iml" filepath="$PROJECT_DIR$/rabbitmq-springboot/rabbitmq-springboot.iml" />
     </modules>
   </component>
 </project>
