@@ -1,0 +1,10 @@
+spring:
+  rabbitmq:
+    host: 192.168.64.140  # www.wht6.cn
+    username: admin
+    password: admin
+    # virtual-host: /wht
+
+    listener:
+      simple:
+        prefetch: 1

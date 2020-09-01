@@ -1,0 +1,16 @@
+package m1;
+
+import org.springframework.amqp.core.AmqpTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Producer {
+    @Autowired
+    private AmqpTemplate amqpTemplate;
+
+    public void send() {
+        amqpTemplate.convertAndSend("helloworld", "Hello world!");
+        System.out.println("消息已发送");
+    }
+}
